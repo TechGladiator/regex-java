@@ -17,8 +17,8 @@ class Reggie {
       System.out.printf("Skill:  %s %n",
                         skill);
     }
-    String script = "Procrastination is surely not the destination, should we talk about shiny things?";
-    Pattern pattern = Pattern.compile("(\\w*(sh|ti|su)\\w*)",
+    String script = "Surely capturing shushes shall show how beneficial Regular Expressions actually are";
+    Pattern pattern = Pattern.compile("(\\w*(sh|ti|su|ci|tu|si)\\w*)",
                                       Pattern.CASE_INSENSITIVE);
     Matcher matcher = pattern.matcher(script);
     while (matcher.find()) {
