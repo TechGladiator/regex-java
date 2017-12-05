@@ -18,7 +18,8 @@ class Reggie {
                         skill);
     }
     String script = "Procrastination is surely not the destination, should we talk about shiny things?";
-    Pattern pattern = Pattern.compile("(\\w*(sh|ti|su)\\w*)");
+    Pattern pattern = Pattern.compile("(\\w*(sh|ti|su)\\w*)",
+                                      Pattern.CASE_INSENSITIVE);
     Matcher matcher = pattern.matcher(script);
     while (matcher.find()) {
       System.out.printf("%s is a shushy word because of %s.  %n",
