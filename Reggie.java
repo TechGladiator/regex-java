@@ -12,5 +12,10 @@ class Reggie {
     } else {
       System.out.printf("%s is NOT a valid zip code%n", zipCode);
     }
+    String skills = "JavaScript, HTML, CSS, Java";
+    for (String skill : skills.split("\\W+")) {
+      System.out.printf("Skill:  %s %n",
+                        skill);
+    }
   }
 }
